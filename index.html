@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="black">
+    
+    <!-- local files -->
+    <link rel="stylesheet" href="style/main.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+    
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <title>Saurabh Khade</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="mainStrip">
+            <p>
+                Saurabh Khade
+            </p>
+            <div id="menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="menuStrip">
+            <ul id="links">
+                <a href="#home"><li class="link" id="home-link">
+                    <i class="bx bx-home"></i>
+                    Home
+                </li></a>
+                <a href="#about"><li class="link" id="about-link">
+                    <i class="bx bx-user"></i>
+                    About Me
+                </li></a>
+                <a href="#resume"><li class="link" id="resume-link">
+                    <i class="bx bx-file"></i>
+                    My Resume
+                </li></a>
+                <a href="#location"><li class="link" id="location-link">
+                    <i class="bx bx-current-location"></i>
+                    My Location
+                </li></a>
+                <a href="#contact"><li class="link" id="contact-link">
+                    <i class="bx bx-envelope"></i>
+                    Contact Me
+                </li></a>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <p id="first">
+            My Name is
+        </p>
+        <p id="second">
+            Saurabh Khade
+        </p>
+        <p id="third">
+            I am a
+        </p>
+        <p id="forth">
+            Web Developer
+        </p>
+        <a href="#about" class="btn">
+            <i class="fa fa-chevron-down"></i>
+        </a>
+    </section>
+    <section id="about">
+        <h1 class="heading">
+            ABOUT ME
+        </h1>
+        <ul>
+            <li><span><i class="fa fa-chevron-right"></i>Name :</span>Saurabh Khade</li>
+            <li><span><i class="fa fa-chevron-right"></i>Website :</span>https://saurabhkhade.github.io/</li>
+            <li><span><i class="fa fa-chevron-right"></i>Email :</span>khadesaurabh056@gmail.com</li>
+            <li><span><i class="fa fa-chevron-right"></i>Git Repositories :</span><span id="git-repos">--</span></li>
+        </ul>
+        <ul>
+            <li><span><i class="fa fa-chevron-right"></i>Degree :</span>BE (CSE)</li>
+            <li><span><i class="fa fa-chevron-right"></i>Age :</span>20</li>
+            <li><span><i class="fa fa-chevron-right"></i>City :</span>Kolhapur, Maharashtra, India</li>
+            <li><span><i class="fa fa-chevron-right"></i>Birthday :</span>October 26, 2000</li>
+        </ul>
+        <div id="skillBars">
+            <div class="set" id="html-wrap">
+                <p>
+                    HTML5
+                </p>
+                <div class="skillBar">
+                    <div class="bar" id="html"></div>
+                    80%
+                </div>
+            </div>
+            <div class="set" id="css-wrap">
+                <p>
+                    CSS3
+                </p>
+                <div class="skillBar">
+                    <div class="bar" id="css"></div>
+                    80%
+                </div>
+            </div>
+            <div class="set" id="js-wrap"> 
+                <p>
+                    JavaScript
+                </p>
+                <div class="skillBar">
+                    <div class="bar" id="js"></div>
+                    70%
+                </div>
+            </div>
+            <div class="set" id="react-wrap">
+                <p>
+                    ReactJS
+                </p>
+                <div class="skillBar">
+                    <div class="bar" id="react"></div>
+                    60%
+                </div>
+            </div>
+            <div class="set" id="python-wrap">
+                <p>
+                    Python
+                </p>
+                <div class="skillBar">
+                    <div class="bar" id="python"></div>
+                    50%
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <h1 class="heading">MY RESUME</h1>
+        <p>
+            There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.
+        </p>
+        <h2 class="heading-2">Summary</h2>
+        <div class="group">
+            <h3 class="heading-3">saurabh khade</h3>
+            <p>I am a well skilled and enthusiast Web Developer, I am still a student of Computer Science so don't have any experience but i have very good knowledge of HTML5, CSS3, JavaScript, Modern JavaScript and ReactJS and i also have good problem solving skills.</p>
+            <h3 class="heading-3">My Objective</h3>
+            <p>To obtain employment with a company that offers a positive atmosphere to learn and implement new skills and technologies for the betterment of the organization.</p>
+        </div>
+        <h2 class="heading-2">Education</h2>
+        <div class="group">
+            <h3 class="heading-3">Bachelors degree in Computer Science</h3>
+            <div class="timeSpan">2019 - Present</div>
+            <p>I am persuing Bachelors of Engineering degree in Computer Science from Annasaheb Dange College of Engineering and Technology, Ashta.</p>
+            <h3 class="heading-3">Class XII</h3>
+            <div class="timeSpan">2018 - 2019</div>
+            <p>I have completed class XII from Jawahar Navodaya Vidyalaya, Sindhudurga in year 2019 with 92.2 percentages in CBSE Board.</p>
+            <h3 class="heading-3">Class X</h3>
+            <div class="timeSpan">2016 - 2017</div>
+            <p>I have completed class X from Jawahar Navodaya Vidyalaya, Sindhudurga in year 2017 with 86.6 percentages in CBSE Board.</p>
+        </div>
+        <h2 class="heading-2">Professional Experience</h2>
+        <div class="group">
+            <h3 class="heading-3">No experience yet</h3>
+        </div>
+        <h2 class="heading-2">Projects</h2>
+        <div class="group">
+            <h3 class="heading-3">Virtual Programmer</h3>
+            <p>Virtual Programmer is a blog website i have created with the help of Django web framework and bootstrap.</p>
+            <a href="https://virtualprogrammer.herokuapp.com/" target="_blank" class="project-link">https://virtualprogrammer.herokuapp.com/</a>
+            <h3 class="heading-3">Portfolio</h3>
+            <p>It is a simple mobile only (non-responsive) portfolio website developed with ReactJS. It was my first website in ReactJS.</p>
+            <a href="https://saurabhkhade.github.io/portfolio/" target="_blank" class="project-link">https://saurabhkhade.github.io/portfolio/</a>
+            <h3 class="heading-3">Green Planet</h3>
+            <p>It is simple non-responsive (desktop only) website developed only with HTML5 and CSS3 and almost no JavaScript. This is the first website of my life created for a small competation in my college.</p>
+            <a href="https://saurabhkhade.github.io/web-project/" target="_blank" class="project-link">https://saurabhkhade.github.io/web-project/</a>
+        </div>
+    </section>
+    <section id="location">
+        <h1 class="heading">My Location</h1>
+        <div id="map"></div>
+    </section>
+    <section id="contact">
+        <h1 class="heading">Contact Me</h1>
+        <div class="card social">
+            <div class="top-icon">
+                <i class="bx bx-share-alt"></i>
+            </div>
+            <h2>Social Profiles</h2>
+            <div class="other-icons">
+                <a href="https://m.facebook.com/saurabh.khade.9889" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/__saurabh_khade__/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/saurabh-khade-2a44681b0" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="https://github.com/SaurabhKhade/" target="_blank"><i class="bx bxl-github"></i></a>
+            </div>
+        </div>
+        <div class="card email">
+            <div class="top-icon">
+                <a href="mailto:khadesaurabh056@gmail.com"><i class="bx bx-envelope"></i></a>
+            </div>
+            <h2>Email me</h2>
+            <p class="card-text"><a href="mailto:khadesaurabh056@gmail.com">khadesaurabh056@gmail.com</a></p>
+        </div>
+        <div class="card call">
+            <div class="top-icon">
+                <a href="tel:+919353688524"><i class="bx bx-phone-call"></i></a>
+            </div>
+            <h2>Call Me</h2>
+            <p class="card-text"><a href="tel:+919353688524">+91 9353688524</a></p>
+        </div>
+        <div class="card contact-form">
+            <form id="form">
+                <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required/>
+                <textarea name="message" id=message rows="8" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <h1 class="heading">Saurabh Khade</h1>
+        <p>Website without visitors is like a ship lost in the horizon.</p>
+        <div class="icons">
+            <a href="https://m.facebook.com/saurabh.khade.9889" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/__saurabh_khade__/" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/saurabh-khade-2a44681b0" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="https://github.com/SaurabhKhade/" target="_blank"><i class="bx bxl-github"></i></a>
+        </div>
+        <p>&copy; copyrights : Saurabh Khade</p>
+    </footer>
+    
+    <!-- scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script src="logic/typed_js_lite.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="logic/mapbox.js" type="text/javascript" charset="utf-8"></script>
+    <script src="logic/firebase.js" type="text/javascript" charset="utf-8"></script>
+    <script src="logic/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
