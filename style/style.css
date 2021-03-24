@@ -2,6 +2,7 @@
 /* variables */
 /* sass code */
 /* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,6 @@
   color: inherit;
   list-style: none;
 }
-
 a {
   -webkit-tap-highlight-color: transparent;
 }
@@ -132,6 +132,7 @@ html {
   width: 75%;
 }
 #nav .menuStrip .link {
+  cursor: pointer;
   color: #252525;
   font-size: 1.7rem;
   padding: 20px;
@@ -149,6 +150,11 @@ html {
 #nav .expanded {
   left: 0;
   right: 20%;
+}
+
+#about,#resume,#location,#contact{
+  max-width: 800px;
+  margin: auto;
 }
 
 #home {
@@ -205,6 +211,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
 }
 #about li i {
@@ -361,10 +368,25 @@ html {
 }
 #contact .social {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
 }
 #contact .email, #contact .call {
   width: 100%;
+  display: inline-block;
+  /* margin: auto; */
+}
+#contact .email-call-wrapper{
+  padding: 0;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#contact .contact-form{
+  max-width: 800px;
 }
 #contact .contact-form input, #contact .contact-form textarea {
   width: 100%;
@@ -389,11 +411,14 @@ html {
   font-size: 1.7rem;
   border: 1px solid #f69f00;
   font-weight: bold;
+  cursor: pointer;
 }
 #contact .contact-form button:active {
   background-color: transparent;
   color: #f69f00;
 }
+
+
 
 #footer {
   margin-top: 50px;
@@ -413,11 +438,12 @@ html {
   text-align: center;
 }
 #footer .icons {
-  margin: 25px 0;
+  margin: 25px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  max-width: 800px;
 }
 #footer .icons i {
   margin: auto;
@@ -451,4 +477,68 @@ html {
   }
 }
 
+@media screen and (min-width: 660px) {
+  #nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #nav .mainStrip{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #nav .mainStrip #menu-btn {
+    display: none;
+  }
+  #nav .menuStrip {
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  #nav ul{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 0;
+  }
+  #nav .menuStrip .link {
+    color: white;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 6px;
+  }
+  #nav .menuStrip .link i {
+    display: none;
+  }
+  #nav .mainStrip p{
+    margin-left: 13px;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  #contact .email, #contact .call {
+    max-width: 370px;
+  }
+  #contact .email{
+    margin-right: auto;
+    margin-left: 0;
+  }
+  #contact .call{
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 250px){
+  body::after{
+    content: "Website is not for the screens less than 250px wide";
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    z-index: 100;
+    background-color: #fff;
+  }
+}
 /*# sourceMappingURL=style.css.map */

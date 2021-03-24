@@ -7,6 +7,12 @@ menuBtn.addEventListener('click', ()=> {
     menuStrip.classList.toggle('expanded');
 });
 
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click',()=>{
+        menuBtn.click();
+    })
+}
+
 let blink_array = ['Front-End Developer', 'React JS Developer', 'CS Student'];
 typed_js_lite(blink, blink_array);
 
