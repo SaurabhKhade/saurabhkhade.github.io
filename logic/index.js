@@ -56,22 +56,6 @@ function skillAnimator() {
 
 document.addEventListener('scroll', skillAnimator);
 
-document.getElementById('form').addEventListener('submit',e=>{
-    e.preventDefault();
-    let name=document.getElementById('name');
-    let email=document.getElementById('email');
-    let subject=document.getElementById('subject');
-    let message=document.getElementById('message');
-    addData(name.value,email.value,subject.value,message.value)
-    .then(()=>{
-        alert('Response Submitted Successfully!');
-        [name.value,email.value,subject.value,message.value]=['','','',''];
-    })
-    .catch(()=>{
-        console.log(err);
-        alert('Failed to submit the response');
-    });
-});
 
 async function git_fetch(){
     let res = await fetch('https://api.github.com/users/saurabhkhade');
