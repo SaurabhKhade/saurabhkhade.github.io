@@ -433,6 +433,49 @@
     display: inline-block;
     margin-top: 20px;
   }
+
+  #certs {
+    padding: 50px 20px;
+    /* max-width: 800px; */
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #certs .heading {
+    width: 100%;
+  }
+
+  #certs .heading::before {
+    content: "Certificates";
+  }
+
+  #certs .box {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 790px;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    overflow-x: auto;
+    padding: 20px 5px;
+    display: flex;
+    flex-basis: 1;
+  }
+
+  #certs .box::-webkit-scrollbar{
+    display: none;
+  }
+
+  #certs .images {
+    width: 290px !important;
+    height: 160px !important;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
   
   #location {
     padding: 50px 20px;
@@ -662,7 +705,7 @@
     }
   }
   
-  @media screen and (min-width: 660px) {
+  @media screen and (min-width: 775px) {
     #nav{
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
