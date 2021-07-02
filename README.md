@@ -1,2 +1,5 @@
-# saurabhkhade.github.io
-This is my portfolio website created with HTML5, CSS3, and JavaScript. also used Sass as preprocessor for CSS and special thanks to autoprefixer for adding vendor prefixes automatically.
+# My Portfolio
+
+I am Saurabh Khade a CS Student and a ReactJS Developer. This is my portfolio website. This is a static website hosted on github pages.
+
+[Visit the site](https://saurabhkhade.github.io/)
