@@ -77,9 +77,23 @@ html {
 }
 
 /* code */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0,0,0,0.35);
+  z-index: 5;
+}
+.backdrop-enabled {
+  display: block;
+}
+
 #nav {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100vw;
   background-color: #252525;
   color: white;
@@ -177,7 +191,7 @@ html {
   right: 0;
   right: 100%;
   left: -1%;
-  z-index: 3;
+  z-index: 15;
   background-color: white;
   border-right: 1px solid #cecece;
   overflow: hidden;
