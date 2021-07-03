@@ -4,15 +4,13 @@ let links = document.getElementsByClassName('link');
 let blink = document.getElementById('forth');
 let drop = document.querySelector('.backdrop');
 
-menuBtn.addEventListener('click', ()=> {
+function toggler() {
   menuStrip.classList.toggle('expanded');
   drop.classList.toggle('backdrop-enabled');
-});
+}
 
-drop.addEventListener('click',()=>{
-  menuStrip.classList.toggle('expanded');
-  drop.classList.toggle('backdrop-enabled');
-})
+menuBtn.addEventListener('click', toggler);
+drop.addEventListener('click', toggler)
 
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('click', ()=> {
@@ -23,55 +21,28 @@ for (let i = 0; i < links.length; i++) {
 let blink_array = ['Front End Developer', 'ReactJS Developer', 'CS Student'];
 typed_js_lite(blink, blink_array);
 
-let html = document.getElementById('html-wrap');
-let css = document.getElementById('css-wrap');
-let js = document.getElementById('js-wrap');
-let react = document.getElementById('react-wrap');
-let mysql = document.getElementById('mysql-wrap');
-let node = document.getElementById('node-wrap')
-let redux = document.getElementById('redux-wrap')
-let next = document.getElementById('next-wrap')
-
-let yetToAdd = ['html', 'css', 'js', 'react', 'mysql', 'node', 'redux', 'next'];
+let skills = ['html', 'css', 'js', 'react', 'mysql', 'node', 'redux', 'next'];
+let skillWrapper = skills.map(i=>document.querySelector(`#${i}-wrap`));
+let animatorId = 0;
+let shownSet = new Set();
 
 function Calc_Dist(element) {
   return (element.getBoundingClientRect().top - window.innerHeight + element.getBoundingClientRect().height);
 }
 
 function skillAnimator() {
-  if (Calc_Dist(html) < 10 && yetToAdd.includes('html')) {
-    document.querySelector('#html').style.setProperty("--width", "85%");
-    yetToAdd = yetToAdd.filter(item=>item != 'html');
-  }
-  if (Calc_Dist(css) < 10 && yetToAdd.includes('css')) {
-    document.querySelector('#css').style.setProperty("--width", "85%");
-    yetToAdd = yetToAdd.filter(item=>item != 'css');
-  }
-  if (Calc_Dist(js) < 10 && yetToAdd.includes('js')) {
-    document.querySelector('#js').style.setProperty("--width", "85%");
-    yetToAdd = yetToAdd.filter(item=>item != 'js');
-  }
-  if (Calc_Dist(react) < 10 && yetToAdd.includes('react')) {
-    document.querySelector('#react').style.setProperty("--width", "75%");
-    yetToAdd = yetToAdd.filter(item=>item != 'react');
-  }
-  if (Calc_Dist(mysql) < 10 && yetToAdd.includes('mysql')) {
-    document.querySelector('#mysql').style.setProperty("--width", "60%");
-    yetToAdd = yetToAdd.filter(item=>item != 'mysql');
-  }
-  if (Calc_Dist(node) < 10 && yetToAdd.includes('node')) {
-    document.querySelector('#node').style.setProperty("--width", "60%");
-    yetToAdd = yetToAdd.filter(item=>item != 'node');
-  }
-  if (Calc_Dist(redux) < 10 && yetToAdd.includes('redux')) {
-    document.querySelector('#redux').style.setProperty("--width", "40%");
-    yetToAdd = yetToAdd.filter(item=>item != 'redux');
-  }
-  if (Calc_Dist(next) < 10 && yetToAdd.includes('next')) {
-    document.querySelector('#next').style.setProperty("--width", "75%");
-    yetToAdd = yetToAdd.filter(item=>item != 'next');
-  }
-  if (yetToAdd.length === 0) {
+  clearTimeout(animatorId);
+  setTimeout(()=> {
+    for (let i = 0; i < skills.length; i++) {
+      if (Calc_Dist(skillWrapper[i]) < 10) {
+        let text = document.querySelector(`#${skills[i]}-wrap .skillBar`).innerText;
+        document.querySelector(`#${skills[i]}`).style.setProperty("--width", text);
+        shownSet.add(skills[i]);
+      }
+    }
+  },
+    200);
+  if (shownSet.size === skills.length) {
     document.removeEventListener('scroll', skillAnimator);
   }
 }

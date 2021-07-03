@@ -1,0 +1,20 @@
+{
+  "name": "saurabhkhade.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.html",
+  "repository": "https://github.com/SaurabhKhade/saurabhkhade.github.io.git",
+  "author": "Saurabh Khade <khadesaurabh056@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "live-server .",
+    "build": "rm -rf build && mkdir build && mkdir build/style && mkdir build/logic && postcss style/*.css --use autoprefixer|minify --css > build/style/main.css && minify index.html > build/index.html && minify logic/index.js > build/logic/index.js && minify logic/mapandstore.js > build/logic/mapandstore.js && cp -R logic/typed_js_lite.min.js build/logic/ && cp -R img build/img"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "minify": "^7.0.2",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  }
+}

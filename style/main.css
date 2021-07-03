@@ -252,7 +252,7 @@ html {
   color: white;
   text-align: center;
   position: relative;
-  background: url(../img/main-bg.jpg) no-repeat center center/cover fixed;
+  background: url(/img/main-bg.jpg) no-repeat center center/cover fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,8 +292,8 @@ html {
   position: absolute;
   bottom: 150px;
   text-shadow: 2px 2px #3c3c3c;
-  -webkit-animation: vibrate2s linear infinite;
-  animation: vibrate2s linear infinite;
+  -webkit-animation: vibrate2slinear infinite;
+  animation: vibrate2slinear infinite;
 }
 
 #about {
@@ -453,15 +453,15 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #certs .heading {
@@ -484,7 +484,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: 1;
-      flex-basis: 1;
+  flex-basis: 1;
 }
 
 #certs .box::-webkit-scrollbar {
@@ -637,9 +637,9 @@ html {
   margin-top: 50px;
   color: white;
   padding: 50px 20px;
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/footer-bg.jpg");
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../img/footer-bg.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/footer-bg.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/footer-bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("/img/footer-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/footer-bg.jpg");
   background-origin: center;
   background-position: center;
   background-size: 100% 100%;
