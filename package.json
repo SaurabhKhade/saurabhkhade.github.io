@@ -7,15 +7,24 @@
   "author": "Saurabh Khade <khadesaurabh056@gmail.com>",
   "license": "MIT",
   "private": false,
+  "browserslist": [
+    "last 50 versions",
+    "not dead",
+    "> 2%"
+  ],
   "scripts": {
-    "start": "live-server .",
-    "build": "rm -rf build && mkdir build && mkdir build/style && mkdir build/logic && postcss style/*.css --use autoprefixer|minify --css > build/style/main.css && minify index.html > build/index.html && minify logic/index.js > build/logic/index.js && minify logic/mapandstore.js > build/logic/mapandstore.js && cp -R logic/typed_js_lite.min.js build/logic/ && cp -R img build/img"
+    "start": "live-server",
+    "prebuild": "rm -rf build",
+    "build": "gulp styles && gulp scripts && gulp pages",
+    "postbuild": "cp -R img/ build/img"
   },
   "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "live-server": "^1.2.1",
-    "minify": "^7.0.2",
-    "postcss": "^8.3.5",
-    "postcss-cli": "^8.3.1"
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-uglify": "latest",
+    "run-sequence": "latest"
   }
 }
