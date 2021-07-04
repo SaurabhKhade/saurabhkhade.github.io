@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Saurabh Khade</title>
+  
+  <!-- basic meta tags -->
+  <meta name="author" content="Saurabh Khade">
+  <meta name="description" content="Hello, My name is Saurabh Khade. I am a CS student and it is my portfolio. Please do visit :)">
+  <meta name="keywords" content="saurabh, khade, portfolio, web developer, react developer, javascript developer, saurabh khade, developer">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="black">
-  <meta name="description" content="Hello, My name is Saurabh Khade. I am a CS student and it is my portfolio. Please do visit :)">
   <meta name="robots" content="index, follow">
+  <meta property="profile:first_name" content="Saurabh" />
+  <meta property="profile:last_name" content="Khade" />
+  <meta property="profile:gender" content="Male" />
+  
+  <!-- open graph tags -->
+  <meta property="og:image" content="/img/favicon.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="My Portfolio Logo showing SK" />
   <meta property="og:type" content="portfolio" />
   <meta property="og:title" content="Saurabh Khade | Portfolio" />
   <meta property="og:description" content="Hello, My name is Saurabh Khade. I am a CS student and it is my portfolio. Please do visit :)" />
-  <meta property="og:image" content="img/favicon.jpeg" />
-  <meta property="og:url" content="https://saurabhkhade.github.io/" />
-  <meta property="og:site_name" content="Saurabh Khade | Portfolio" />
-  <meta name="keywords" content="saurabh, khade, portfolio, web developer, react developer, javascript developer, saurabh khade, developer">
-  <meta name="author" content="Saurabh Khade">
+  <meta property="og:url" content="https://saurabhkhade.vercel.app/" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style/main.css" type="text/css" media="all" />
@@ -28,17 +37,22 @@
   <link rel="stylesheet" href="style/footer.css" type="text/css" media="all" />
   
   <!-- icons -->
-  <link rel="shortcut icon" href="img/favicon.jpeg" type="image/jpeg" />
-  <link rel="apple-touch-icon" href="img/favicon.jpeg" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/favicon.png" type="image/png"/>
   
   <!-- CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- extra -->
+  <link rel="canonical" href="https://saurabhkhade.vercel.app/" />
 
-  <title>Saurabh Khade</title>
 </head>
 <body>
+  <!-- backdrop when navbar is open -->
   <div class="backdrop"></div>
+  
+  <!-- navbar -->
   <nav id="nav">
     <div class="mainStrip">
       <p>
@@ -85,6 +99,9 @@
       </ul>
     </div>
   </nav>
+  <!-- navbar -->
+  
+  <!-- home -->
   <section id="home">
     <p id="first">
       My Name is
@@ -102,6 +119,9 @@
       <i class="fa fa-chevron-down"></i>
     </a>
   </section>
+  <!-- home -->
+  
+  <!-- about -->
   <section id="about">
     <h1 class="heading">
       ABOUT ME
@@ -193,6 +213,9 @@
       </div>
     </div>
   </section>
+  <!-- about -->
+  
+  <!-- resume -->
   <section id="resume">
     <h1 class="heading">MY RESUME</h1>
     <p>
@@ -256,6 +279,9 @@
       <a href="http://bit.ly/saurabhkhade-projects" target="_blank" class="project-link">bit.ly/saurabhkhade-projects</a>
     </div>
   </section>
+  <!-- resume -->
+  
+  <!-- Certificates -->
   <section id="certs">
     <h1 class="heading">Certificates</h1>
     <div class="box">
@@ -276,10 +302,16 @@
       <img src="./img/certs/technical quiz.jpg" alt="" class="images">
     </div>
   </section>
+  <!-- Certificates -->
+  
+  <!-- location -->
   <section id="location">
     <h1 class="heading">My Location</h1>
     <div id="map"></div>
   </section>
+  <!-- location -->
+  
+  <!-- contact -->
   <section id="contact">
     <h1 class="heading">Contact Me</h1>
     <div class="card social">
@@ -324,6 +356,9 @@
       </form>
     </div>
   </section>
+  <!-- contact -->
+  
+  <!-- footer -->
   <footer id="footer">
     <h1 class="heading">Saurabh Khade</h1>
     <p>
@@ -336,6 +371,7 @@
       <a href="https://github.com/SaurabhKhade/" target="_blank"><i class="bx bxl-github"></i></a>
     </div>
   </footer>
+  <!-- footer -->
 
   <!-- scripts -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
@@ -347,5 +383,6 @@
   <script src="logic/navToggler.js" type="text/javascript" charset="utf-8"></script>
   <script src="logic/skillAnimator.js" type="text/javascript" charset="utf-8"></script>
   <script src="logic/mapandstore.js" type="text/javascript" charset="utf-8"></script>
+  <!-- scripts -->
 </body>
 </html>
