@@ -1,0 +1,36 @@
+#footer {
+  margin-top: 50px;
+  color: white;
+  padding: 50px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/footer-bg.jpg");
+  background-origin: center;
+  background-position: center;
+  background-size: 100% 100%;
+  font-size: 1.5rem;
+}
+#footer .heading {
+  color: white;
+}
+#footer p {
+  margin: 15px 0;
+  text-align: center;
+}
+#footer .icons {
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+}
+#footer .icons i {
+  margin: auto;
+  background-color: #f69f00;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-items: center;
+}

@@ -1,3 +1,4 @@
+// mapbox access token
 mapboxgl.accessToken = 'pk.eyJ1Ijoia2hhZGVzYXVyYWJoIiwiYSI6ImNrbjVnMjNmdjAzc2Yyb254NnNyb3RxeGwifQ.W9LU5ueusnWDrf6GTxxK7A';
 
 let map = new mapboxgl.Map({
@@ -6,12 +7,13 @@ let map = new mapboxgl.Map({
     zoom: 5
 });
 
+// location: kagani
 let marker = new mapboxgl.Marker()
 .setLngLat([74.371027, 15.976736])
 .addTo(map);
 map.setCenter( [74.371027, 15.976736]);
 
-
+// firebase config
 let firebaseConfig = {
     apiKey: "AIzaSyDnU-S26aLhpzKiw6u2fjopOH1pPlSdhus",
     authDomain: "portfolio-6d016.firebaseapp.com",
