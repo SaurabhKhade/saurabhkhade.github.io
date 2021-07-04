@@ -42,13 +42,4 @@ build directory will be created in the root directory containing all minified fi
 
 ## Note
 
-If you have added or removed any files or directories, please check the build script in package.json and update it if required.
-
-```json
-{
-  "scripts": {
-    "start": "live-server .",
-    "build": "rm -rf build && mkdir build && mkdir build/style && mkdir build/logic && postcss style/*.css --use autoprefixer|minify --css > build/style/main.css && minify index.html > build/index.html && minify logic/index.js > build/logic/index.js && minify logic/mapandstore.js > build/logic/mapandstore.js && cp -R logic/typed_js_lite.min.js build/logic/ && cp -R img build/img"
-  }
-}
-```
+If you have any other directory structure for javascript and css files, make sure to update the source path in gulpfile before running build command.
