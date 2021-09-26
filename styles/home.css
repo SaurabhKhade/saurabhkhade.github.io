@@ -1,0 +1,38 @@
+#home {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  background: url(/img/main-bg.jpg) no-repeat center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#first, #third {
+  font-size: 2rem;
+  margin: 10px 0;
+  text-shadow: 2px 2px #3c3c3c;
+}
+#second, #forth {
+  font-size: 4rem;
+  text-shadow: 3px 3px #3c3c3c;
+  word-wrap: break-word;
+  white-space: break-word;
+}
+#forth::after {
+  content: "";
+  padding-left: 10px;
+  border-right: 2px solid white;
+  box-shadow: 2px 0 #3c3c3c;
+  animation: blink 0.3s ease infinite;
+}
+#home .btn {
+  font-size: 3.3rem;
+  position: absolute;
+  bottom: 50px;
+  text-shadow: 2px 2px #3c3c3c;
+  animation: vibrate 2s linear infinite;
+}
