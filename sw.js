@@ -1,10 +1,10 @@
-const codeCache = "saurabhkhade-code-cache-v1";
+const codeCache = "saurabhkhade-code-cache-v2";
 const staticCache = "saurabhkhade-static-cache-v1";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(codeCache).then((cache) => {
-      return cache.addAll(["/","/index.html"]);
+      return cache.addAll(["/", "/index.html"]);
     })
   );
 });
@@ -22,7 +22,10 @@ self.addEventListener("fetch", (event) => {
         }
         let responseToCache = response.clone();
 
-        if (event.request.url.includes("img/") || event.request.url.includes("/cdn/")) {
+        if (
+          event.request.url.includes("img/") ||
+          event.request.url.includes("/cdn/")
+        ) {
           caches.open(staticCache).then((cache) => {
             cache.put(event.request, responseToCache);
           });
@@ -39,7 +42,7 @@ self.addEventListener("fetch", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
-  let whitelist = [codeCache,staticCache];
+  let whitelist = [codeCache, staticCache];
 
   event.waitUntil(
     caches.keys().then((cacheNames) => {

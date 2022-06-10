@@ -27,10 +27,8 @@ document.getElementById("age").innerText = (
   (1000 * 60 * 60 * 24 * 365)
 ).toPrecision(2);
 
-// if ("serviceWorker" in navigator) {
-//   window.addEventListener("load", () => {
-//     navigator.serviceWorker
-//       .register("/sw.js")
-//       .catch(() => {});
-//   });
-// }
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
+  });
+}
