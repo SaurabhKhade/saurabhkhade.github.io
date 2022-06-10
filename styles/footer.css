@@ -2,10 +2,13 @@
   margin-top: 50px;
   color: white;
   padding: 50px 20px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/footer-bg.jpg");
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)),
+    url("/img/footer-bg.jpg");
   background-origin: center;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
   font-size: 1.5rem;
 }
 #footer .heading {
@@ -21,7 +24,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  max-width: 800px;
+  max-width: 400px;
 }
 #footer .icons i {
   margin: auto;

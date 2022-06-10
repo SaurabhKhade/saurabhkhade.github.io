@@ -62,7 +62,6 @@
 
     <!-- canonical tag -->
     <link rel="canonical" href="https://saurabhkhade.github.io/" />
-
   </head>
   <body>
     <!-- backdrop when navbar is open -->
@@ -88,7 +87,7 @@
         <ul id="links">
           <a href="#home"
             ><li class="link" id="home-link">
-              <i class='bx bx-home'></i>
+              <i class="bx bx-home"></i>
               <p>Home</p>
             </li></a
           >
@@ -98,18 +97,24 @@
               <p>About Me</p>
             </li></a
           >
+          <a href="#skills"
+            ><li class="link" id="skills-link">
+              <i class="bx bx-code-alt"></i>
+              <p>Skills</p>
+            </li></a
+          >
           <a href="#resume"
             ><li class="link" id="resume-link">
               <i class="bx bx-file"></i>
               <p>My Resume</p>
             </li></a
           >
-          <a href="#certs"
+          <!-- <a href="#certs"
             ><li class="link" id="certs-link">
               <i class="fa fa-certificate"></i>
               <p>Certificates</p>
             </li></a
-          >
+          > -->
           <a href="#location"
             ><li class="link" id="location-link">
               <i class="bx bx-current-location"></i>
@@ -140,22 +145,31 @@
     <!-- home -->
 
     <!-- about -->
-    <section id="about" data-aos="fade-up" data-aos-offset="300">
+    <section id="about" data-aos="fade-up">
       <h1 class="heading">ABOUT ME</h1>
       <ul>
         <li>
           <span><i class="fa fa-chevron-right"></i>Name :</span>Saurabh Khade
         </li>
         <li>
-          <span><i class="fa fa-chevron-right"></i>Website :</span
-          >https://saurabhkhade.github.io
+          <span><i class="fa fa-chevron-right"></i>Resume :</span
+          ><a href="http://bit.ly/saurabhkhade-resume" target="_blank"
+            >bit.ly/saurabhkhade-resume</a
+          >
         </li>
         <li>
           <span><i class="fa fa-chevron-right"></i>Email :</span
-          >khadesaurabh000@gmail.com
+          ><a href="mailto:khadesaurabh000@gmail.com" target="_blank"
+            >khadesaurabh000@gmail.com</a
+          >
         </li>
         <li>
-          <span><i class="fa fa-chevron-right"></i>Git Repositories :</span
+          <span><i class="fa fa-chevron-right"></i>Currently Working at :</span
+          >Orionsoft Tech Services Pvt. Ltd.
+        </li>
+        <li>
+          <span
+            ><i class="fa fa-chevron-right"></i>Public Git Repositories :</span
           ><span id="git-repos">--</span>
         </li>
       </ul>
@@ -165,7 +179,8 @@
           (persuing*)
         </li>
         <li>
-          <span><i class="fa fa-chevron-right"></i>Age :</span>20
+          <span><i class="fa fa-chevron-right"></i>Age :</span
+          ><span id="age"></span>
         </li>
         <li>
           <span><i class="fa fa-chevron-right"></i>City :</span>Kolhapur,
@@ -176,18 +191,25 @@
           2000
         </li>
       </ul>
+    </section>
+    <!-- about -->
+
+    <!-- resume -->
+    <section id="skills" data-aos="fade-up">
+      <h1 class="heading">MY SKILLS</h1>
+
       <div id="skillBars">
-        <div class="set" id="html-wrap">
-          <p>HTML5</p>
+        <div class="set" id="ccpp-wrap">
+          <p>C/C++</p>
           <div class="skillBar">
-            <div class="bar" id="html"></div>
-            85%
+            <div class="bar" id="ccpp"></div>
+            75%
           </div>
         </div>
-        <div class="set" id="css-wrap">
-          <p>CSS3</p>
+        <div class="set" id="python-wrap">
+          <p>Python</p>
           <div class="skillBar">
-            <div class="bar" id="css"></div>
+            <div class="bar" id="python"></div>
             85%
           </div>
         </div>
@@ -195,50 +217,61 @@
           <p>JavaScript</p>
           <div class="skillBar">
             <div class="bar" id="js"></div>
-            85%
-          </div>
-        </div>
-        <div class="set" id="react-wrap">
-          <p>ReactJS</p>
-          <div class="skillBar">
-            <div class="bar" id="react"></div>
-            75%
-          </div>
-        </div>
-        <div class="set" id="next-wrap">
-          <p>NextJS</p>
-          <div class="skillBar">
-            <div class="bar" id="next"></div>
-            75%
-          </div>
-        </div>
-        <div class="set" id="node-wrap">
-          <p>NodeJS</p>
-          <div class="skillBar">
-            <div class="bar" id="node"></div>
-            60%
+            90%
           </div>
         </div>
         <div class="set" id="mysql-wrap">
           <p>MySQL</p>
           <div class="skillBar">
             <div class="bar" id="mysql"></div>
+            80%
+          </div>
+        </div>
+        <div class="set" id="mongo-wrap">
+          <p>MongoDB</p>
+          <div class="skillBar">
+            <div class="bar" id="mongo"></div>
             60%
           </div>
         </div>
-        <div class="set" id="redux-wrap">
-          <p>Redux</p>
+        <div class="set" id="ml-wrap">
+          <p>Machine Learning</p>
           <div class="skillBar">
-            <div class="bar" id="redux"></div>
-            40%
+            <div class="bar" id="ml"></div>
+            80%
+          </div>
+        </div>
+        <div class="set" id="react-wrap">
+          <p>ReactJS</p>
+          <div class="skillBar">
+            <div class="bar" id="react"></div>
+            85%
+          </div>
+        </div>
+        <div class="set" id="next-wrap">
+          <p>NextJS</p>
+          <div class="skillBar">
+            <div class="bar" id="next"></div>
+            85%
+          </div>
+        </div>
+        <div class="set" id="express-wrap">
+          <p>ExpressJS</p>
+          <div class="skillBar">
+            <div class="bar" id="express"></div>
+            80%
+          </div>
+        </div>
+        <div class="set" id="git-wrap">
+          <p>Git</p>
+          <div class="skillBar">
+            <div class="bar" id="git"></div>
+            85%
           </div>
         </div>
       </div>
     </section>
-    <!-- about -->
-
-    <!-- resume -->
-    <section id="resume" data-aos="fade-right">
+    <section id="resume" data-aos="fade-up">
       <h1 class="heading">MY RESUME</h1>
       <p>
         There are three responses to a piece of design – yes, no, and WOW! Wow
@@ -246,99 +279,224 @@
       </p>
       <h2 class="heading-2">Summary</h2>
       <div class="group" data-aos="fade-up">
-        <h3 class="heading-3">saurabh khade</h3>
-        <p>
-          I am a self thought web development enthusiast, I am very well skilled
-          in HTML5, CSS3, JavaScript and ReactJS. I also have knowledge of
-          frameworks like NextJS for static site generation and server side
-          rendering, libraries like Redux for state management and preprocessors
-          like sass for CSS. I am also aware of query language MySQL for
-          database handling. I also have good problem solving skills.
-        </p>
-        <h3 class="heading-3">My Objective</h3>
-        <p>
-          To obtain employment with a company that offers a positive atmosphere
-          to learn and implement new skills and technologies for the betterment
-          of the organization.
-        </p>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">Who I am</h3>
+          <p>
+            &emsp;I am Saurabh Khade from Kolhapur, Maharashtra. Currently, I am
+            pursuing my Computer Science and Engineering degree at the Annasaheb
+            Dange College of Engineering and Technology, Aashta, and working as
+            a part-time Full Stack Developer at Orionsoft Tech Services.<br />
+            &emsp;My area of interest is coding, and I have good knowledge of
+            some programming languages like C, C++, Python, and JavaScript. I am
+            a self-taught Web Development enthusiast, and I have many more Web
+            Development-related skills like ReactJS, NextJS, Jquery, Redux,
+            SCSS, Bootstrap, etc., for front-end and NodeJS, ExpressJS, PHP,
+            Flask, etc. for the backend. I have a good understanding of the git
+            version control system, MySQL, MongoDB, Firebase Firestore, and
+            machine learning.
+          </p>
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">My Objective</h3>
+          <p>
+            My objective is to get placed in a company that will provide me a
+            platform to utilise and enhance my skills and also helps me
+            incorporate growth.
+          </p>
+        </div>
       </div>
       <h2 class="heading-2">Education</h2>
-      <div class="group" data-aos="fade-right">
-        <h3 class="heading-3">Bachelors degree in Computer Science</h3>
-        <div class="timeSpan">2019 - Present</div>
-        <p>
-          I am persuing Bachelors of Engineering degree in Computer Science from
-          Annasaheb Dange College of Engineering and Technology, Ashta.
-        </p>
-        <h3 class="heading-3">Class XII</h3>
-        <div class="timeSpan">2018 - 2019</div>
-        <p>
-          I have completed class XII from Jawahar Navodaya Vidyalaya,
-          Sindhudurga in year 2019 with 92.2 percentages in CBSE Board.
-        </p>
-        <h3 class="heading-3">Class X</h3>
-        <div class="timeSpan">2016 - 2017</div>
-        <p>
-          I have completed class X from Jawahar Navodaya Vidyalaya, Sindhudurga
-          in year 2017 with 86.6 percentages in CBSE Board.
-        </p>
+      <div class="group" data-aos="fade-up">
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            B.Tech., Annasaheb Dange College of Engineering and Technology,
+            Ashta
+          </h3>
+          <div class="timeSpan">2019 - Present</div>
+          <p>CPI*: 8.67</p>
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            12th, Jawahar Navodaya Vidyalaya, Sindhudurg
+          </h3>
+          <div class="timeSpan">2018 - 2019</div>
+          <p>Percentage: 92.20 (CBSE)</p>
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            10th, Jawahar Navodaya Vidyalaya, Sindhudurg
+          </h3>
+          <div class="timeSpan">2016 - 2017</div>
+          <p>Percentage: 86.6 (CBSE)</p>
+        </div>
       </div>
       <h2 class="heading-2">Professional Experience</h2>
       <div class="group" data-aos="fade-up">
-        <h3 class="heading-3">Internship at Oyesters Trainings</h3>
-        <div class="timeSpan">September, 2021 - Present</div>
-        <p>
-          I am currently working as web development intern at Oyesters
-          Trainings.
-        </p>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            Full Stack Developer, Orionsoft Tech Services Pvt. Ltd.
+          </h3>
+          <div class="timeSpan">January, 2022 - Present</div>
+          <p>
+            I am currently working as a full-stack developer at Orionsoft Tech
+            Services. During this work, I have developed a web application for
+            school management to manage students' data and documents using
+            ReactJS, ExpressJS, and MySQL database. Another project I have
+            completed is building a web application for customer management to
+            manage pending payments of customers and inventory management using
+            ReactJS and Firebase Firestore.
+          </p>
+          <div class="techs-used">
+            <h3>Technologies Used:</h3>
+            <p>
+              React.js · JavaScript · Express.js · Node.js · MySQL · Git ·
+              GitHub · Firebase · Cloud Firestore · REST APIs · HTML · CSS ·
+              Material-UI
+            </p>
+          </div>
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            Web Development Intern, OPRA IT Solutions Pvt. Ltd., Remote
+          </h3>
+          <div class="timeSpan">December, 2021 - December, 2021</div>
+          <p>
+            I have worked as 15 days web development intern at OPRA IT
+            SOLUTIONS, Pune. During the internship, I worked in a team to
+            develop web pages to check the details of the course and enrolled
+            students in an online education platform using PHP, HTML, CSS, and
+            JavaScript.
+          </p>
+          <div class="techs-used">
+            <h3>Technologies Used:</h3>
+            <p>JavaScript · MySQL · PHP · HTML · CSS</p>
+          </div>
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            Web Development Intern, Oyesters Training, Remote
+          </h3>
+          <div class="timeSpan">September, 2021 - November, 2021</div>
+          <p>
+            I have worked as Web Development Intern at Oyesters Training. In
+            this journey of 2 months, I have developed a web application for
+            customer relationship management using web-related technologies like
+            Bootstrap, JQuery, JQuery Plugins, PHP, and MySQL database. I have
+            used the progressive web app concept to cache data on a user's
+            device for fast performance.
+          </p>
+          <div class="techs-used">
+            <h3>Technologies Used:</h3>
+            <p>JavaScript · MySQL · PHP · HTML · CSS</p>
+          </div>
+        </div>
       </div>
       <h2 class="heading-2">Projects</h2>
-      <div class="group" data-aos="fade-right">
-        <h3 class="heading-3">Code The Skills</h3>
-        <p>
-          Code The Skills is my blog website I have created with NextJS
-          frameworks static site generator. I upload web development and coding
-          related posts here. (currently this website is non-responsive*)
-        </p>
-        <a
-          href="https://codetheskills.vercel.app/"
-          target="_blank"
-          class="project-link"
-          rel="noreferrer"
-          >https://codetheskills.vercel.app/</a
-        >
-        <h3 class="heading-3">EditorX</h3>
-        <p>
-          EditorX is a online code editor and compiler based on AceJS and CodeX
-          API and developed with ReactJS. It has lot of features like easy and
-          interactive file system and code execution of 8 different languages
-          and 15+ fonts along with all features of ace editor itself.
-        </p>
-        <a
-          href="https://editorx.vercel.app"
-          target="_blank"
-          class="project-link"
-          rel="noreferrer"
-          >https://editorx.vercel.app</a
-        >
-        <h3 class="heading-3">Quiz App</h3>
-        <p>
-          This is simple Olympic Quiz App with 10 questions based on olympic
-          games. It is developed with ReactJS and Redux.
-        </p>
-        <a
-          href="https://saurabhkhade.github.io/Quiz-App"
-          target="_blank"
-          class="project-link"
-          rel="noreferrer"
-          >https://saurabhkhade.github.io/Quiz-App</a
-        >
+      <div class="group" data-aos="fade-up">
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">EditorX : an Online Code Editor</h3>
+          <p>
+            It is an online code editor developed in ReactJS using AceJS library
+            for syntax highlighting and code autocompletion like fearures. It
+            has lot of features like creating and managing multiple files,
+            customising the code editor with provided themes and fonts etc.
+            Being a Progressive WebApp it can also be used in offline mode.
+          </p>
+          <div class="techs-used">
+            <h3>Tech Stack:</h3>
+            <p>JavaScript · MySQL · PHP · HTML · CSS</p>
+          </div>
+          <a
+            href="https://editorx.vercel.app"
+            target="_blank"
+            class="project-link"
+            rel="noreferrer"
+            >https://editorx.vercel.app</a
+          >
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">Movie Recommendation System</h3>
+          <p>
+            I have developed a movie recommendation system project using the
+            TMDB movies dataset and machine learning concepts. The project has
+            been developed using content-based filtering method to find the
+            similar movies. Using this project, user can search for movies using
+            by just entering the title of movie or by entering the details of
+            the movie if name is not known. I have learned NLP, text
+            vectorization, Cosine Similarity, etc. Machine Learning Concepts.
+          </p>
+          <a target="_blank" class="project-link" rel="noreferrer"
+            >not Available</a
+          >
+        </div>
+      </div>
+      <h2 class="heading-2">Certificates</h2>
+      <div class="group" data-aos="fade-up">
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">
+            Programming for Everybody (Getting Started with Python)
+          </h3>
+          <div class="timeSpan">Coursera</div>
+          <div class="timeSpan">October 8, 2020</div>
+          <br />
+          <br />
+          <a
+            href="https://coursera.org/share/c91f60fcf0442317d6fd28d6b5fabba1"
+            target="_blank"
+            class="project-link"
+            rel="noreferrer"
+            >View Certificate</a
+          >
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">Python Basics fo Data Science</h3>
+          <div class="timeSpan">edX</div>
+          <div class="timeSpan">June 24, 2021</div>
+          <br />
+          <br />
+          <a
+            href="https://courses.edx.org/certificates/18b5294b0b1e4e4bbe01f56d67e32abc"
+            target="_blank"
+            class="project-link"
+            rel="noreferrer"
+            >View Certificate</a
+          >
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">ARVR and IOT Workshop</h3>
+          <div class="timeSpan">The Intellect Technologies</div>
+          <div class="timeSpan">February 27, 2022</div>
+          <br />
+          <br />
+          <a
+            href="https://saurabhkhade.github.io/resume/documents/ARVR%20Workshop.pdf"
+            target="_blank"
+            class="project-link"
+            rel="noreferrer"
+            >View Certificate</a
+          >
+        </div>
+        <div class="group-content" data-aos="fade-up">
+          <h3 class="heading-3">AI/ML Virtual Internship</h3>
+          <!-- <div class="timeSpan">AICTE-Eduskill • May 20, 2022</div> -->
+          <div class="timeSpan">AICTE-Eduskill</div>
+          <div class="timeSpan">May 20, 2022</div>
+          <br />
+          <br />
+          <a
+            href="https://saurabhkhade.github.io/resume/documents/SAURABH%20SHANKAR%20KHADE%20191013.pdf"
+            target="_blank"
+            class="project-link"
+            rel="noreferrer"
+            >View Certificate</a
+          >
+        </div>
       </div>
     </section>
     <!-- resume -->
 
     <!-- Certificates -->
-    <section id="certs" data-aos="fade-up">
+    <!-- <section id="certs" data-aos="fade-up">
       <h1 class="heading">Certificates</h1>
       <div class="box">
         <img src="./img/certs/brain power.jpg" alt="" class="images" />
@@ -361,18 +519,18 @@
         <img src="./img/certs/sololearn sql.jpg" alt="" class="images" />
         <img src="./img/certs/technical quiz.jpg" alt="" class="images" />
       </div>
-    </section>
+    </section> -->
     <!-- Certificates -->
 
     <!-- location -->
-    <section id="location" data-aos="fade-right">
+    <section id="location" data-aos="fade-up">
       <h1 class="heading">My Location</h1>
       <div id="map"></div>
     </section>
     <!-- location -->
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h1 class="heading">Contact Me</h1>
       <div class="card social" data-aos="fade-up">
         <div class="top-icon">
@@ -387,13 +545,13 @@
             ><i class="bx bxl-facebook"></i
           ></a>
           <a
-            href="https://www.instagram.com/__saurabh_khade__/"
+            href="https://www.instagram.com/_saurabh_khade/"
             target="_blank"
             rel="noreferrer"
             ><i class="bx bxl-instagram"></i
           ></a>
           <a
-            href="https://www.linkedin.com/in/saurabh-khade-2a44681b0"
+            href="https://www.linkedin.com/in/saurabhkhade"
             target="_blank"
             rel="noreferrer"
             ><i class="bx bxl-linkedin-square"></i
@@ -407,7 +565,7 @@
         </div>
       </div>
       <div class="email-call-wrapper">
-        <div class="card email" data-aos="fade-right">
+        <div class="card email" data-aos="fade-up">
           <div class="top-icon">
             <a href="mailto:khadesaurabh000@gmail.com"
               ><i class="bx bx-envelope"></i
@@ -430,7 +588,7 @@
           </p>
         </div>
       </div>
-      <div class="card contact-form" data-aos="fade-right">
+      <div class="card contact-form" data-aos="fade-up">
         <form id="form">
           <input
             type="text"
@@ -467,24 +625,24 @@
     <!-- contact -->
 
     <!-- footer -->
-    <footer id="footer">
-      <h1 class="heading">Saurabh Khade</h1>
+    <footer id="footer" data-aos="fade-up">
+      <h1 class="heading">Er. Saurabh Khade</h1>
       <p>Website without visitors is like a ship lost in the horizon.</p>
       <div class="icons">
         <a
-          href="https://m.facebook.com/saurabh.khade.9889"
+          href="https://www.facebook.com/saurabh.khade.9889"
           target="_blank"
           rel="noreferrer"
           ><i class="bx bxl-facebook"></i
         ></a>
         <a
-          href="https://www.instagram.com/__saurabh_khade__/"
+          href="https://www.instagram.com/_saurabh_khade/"
           target="_blank"
           rel="noreferrer"
           ><i class="bx bxl-instagram"></i
         ></a>
         <a
-          href="https://www.linkedin.com/in/saurabh-khade-2a44681b0"
+          href="https://www.linkedin.com/in/saurabhkhade"
           target="_blank"
           rel="noreferrer"
           ><i class="bx bxl-linkedin-square"></i
@@ -505,6 +663,12 @@
     <link
       rel="stylesheet"
       href="styles/about.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/skills.css"
       type="text/css"
       media="all"
     />
@@ -541,7 +705,10 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css" media="all" />
 
     <!-- CDN CSS -->
-    <link rel="stylesheet" href="styles/cdn/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="styles/cdn/font-awesome/css/font-awesome.min.css"
+    />
     <link href="styles/cdn/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="styles/cdn/aos.css" rel="stylesheet" />
     <link href="styles/cdn/mapbox-gl.css" rel="stylesheet" />

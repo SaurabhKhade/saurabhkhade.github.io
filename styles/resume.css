@@ -1,6 +1,6 @@
 #resume {
   font-size: 1.5rem;
-  padding: 50px 20px;
+  padding: 90px 20px 0px;
 }
 #resume .heading {
   margin-bottom: 30px;
@@ -21,6 +21,7 @@
 }
 #resume .group .timeSpan {
   margin-top: 20px;
+  margin-right: 5px;
   padding: 5px;
   display: inline-block;
   text-transform: capitalize;
@@ -31,6 +32,12 @@
 #resume .group .project-link {
   color: #005fbf;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
   word-break: break-all;
+}
+#resume .techs-used {
+  margin-top: 10px;
+}
+#resume .techs-used p {
+  margin: 0;
 }

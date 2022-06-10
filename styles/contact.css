@@ -1,18 +1,19 @@
 #contact {
-  padding: 50px 20px;
+  padding: 90px 20px 0px;
 }
 #contact .heading::before {
   content: "Contact Me";
 }
 #contact .card {
   border: 0.5px solid #eaeaea;
-  box-shadow: 2px 2px 15px 1px #e1e1e1, -2px -2px 15px 1px #e1e1e1;
+  box-shadow: 2px 3px 1px #e1e1e1;
   padding: 20px 10px;
   margin: auto;
   font-size: 1.5rem;
   color: grey;
   text-align: center;
   margin-top: 50px;
+  border-radius: 5px;
 }
 #contact .card h2 {
   text-transform: capitalize;
@@ -43,6 +44,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
 }
 #contact .other-icons i {
   padding: 8px;
@@ -53,7 +56,8 @@
   width: 100%;
   max-width: 800px;
 }
-#contact .email, #contact .call {
+#contact .email,
+#contact .call {
   position: relative;
   width: 100%;
   /* display: inline-block; */
@@ -71,8 +75,10 @@
 #contact .contact-form {
   width: 100%;
   max-width: 800px;
+  padding: 25px 20px;
 }
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
   font-family: Times New Roman;
   margin: 10px 0;
@@ -82,7 +88,8 @@
   border-radius: 5px;
   color: black;
 }
-#contact input:placeholder, #contact textarea:placeholder {
+#contact input:placeholder,
+#contact textarea:placeholder {
   color: grey;
 }
 #contact .contact-form button {

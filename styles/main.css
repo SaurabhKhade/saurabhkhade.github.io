@@ -7,9 +7,11 @@
   color: inherit;
   list-style: none;
   scroll-behavior: smooth;
-  scroll-margin-top: 70px;
+  scroll-margin-top: 30px;
 }
-*:focus, *:active, *:hover {
+*:focus,
+*:active,
+*:hover {
   outline: none;
   text-decoration: none;
   color: inherit;
@@ -75,16 +77,21 @@ html {
   right: 0;
   bottom: 0;
   display: none;
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: 5;
 }
 .backdrop-enabled {
   display: block;
 }
 
-#about,#resume,#location,#contact {
+#about,
+#resume,
+#location,
+#contact,
+#skills {
   max-width: 800px;
   margin: auto;
+  /* border: 1px solid red; */
 }
 
 @keyframes blink {
@@ -154,7 +161,8 @@ html {
 }
 
 @media only screen and (min-width: 800px) {
-  #contact .email, #contact .call {
+  #contact .email,
+  #contact .call {
     max-width: 370px;
   }
   #contact .email {

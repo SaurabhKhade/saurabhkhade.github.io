@@ -1,0 +1,48 @@
+#skills {
+  padding: 90px 20px 0px;
+  font-size: 1.5rem;
+}
+
+#skills .heading::before {
+  content: "My Skills";
+}
+
+#skillBars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+#skills .set {
+  padding: 10px 0;
+  width: 100%;
+}
+#skills .skillBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#skillBars .bar {
+  width: 87%;
+  height: 9px;
+  border-radius: 3px;
+  transform: skew(-10deg);
+  background-color: #eaeaea;
+  position: relative;
+  --width: 0;
+}
+#skillBars .bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #f69f00;
+  z-index: 10;
+  border-radius: 3px;
+  transition: width 0.4s linear;
+  width: var(--width);
+}
