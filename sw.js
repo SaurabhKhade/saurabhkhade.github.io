@@ -1,4 +1,4 @@
-const codeCache = "saurabhkhade-code-cache-v2";
+const codeCache = "saurabhkhade-code-cache-v3";
 const staticCache = "saurabhkhade-static-cache-v1";
 
 self.addEventListener("install", (event) => {
