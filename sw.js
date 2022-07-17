@@ -10,6 +10,9 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  if ( event.request.url.indexOf( 'resume' ) !== -1 ) {
+        return false;
+   }
   event.respondWith(
     caches.match(event.request).then((response) => {
       if (response) {
